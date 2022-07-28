@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+body {
+
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size:50px;
+    padding-top: 5rem;
+    text-align: center;
+    
+    }
+
+img {
+    margin-
+}    
+    .heart {
+        float: center;
+        margin-left: 30px;
+        border-bottom: 30px;
+        width: 30px;
+        height: 30px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: red;
+        padding: 0;  /*added code*/
+        border: none;  /*added code*/
+        outline:none;
+      }
+      
+      .heart:before,
+      .heart:after {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        content: '';
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        background-color: red;
+      }
+      
+      .heart:before {
+        bottom: 0px;
+        left: -15px;
+      }
+      
+      .heart:after {
+        top: -15px;
+        right: 0px;
+      }
+      button.heart:active,
+      button.heart:active:after,
+      button.heart:active:before {
+        background-color: #e80202;
+        box-shadow: inset 1px 1px 1px #c50b0b;
+      }

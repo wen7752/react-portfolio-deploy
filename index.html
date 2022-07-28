@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <title>Not yet finished</title>
+</head>
+
+<body>
+
+
+    <div>
+        <element  onclick="change()" style="display:inline-block" id="text1">Who's the best? </element > 
+            <!-- <input type="button" value="                 " onclick="change()" id="heart" /> -->
+            <button onclick="change()" style="display:inline-block" type="submit" class="heart"></button>
+        <br />
+        <img onclick="change()" id="gif1" src="https://media.giphy.com/media/lCN6LF3S1fQWc/giphy.gif">
+    </div>
+    
+    <button onclick="redirect()">  Portfolio    </button>
+
+    <script type="text/javascript">
+
+        function redirect(){
+
+            window.location.href = "portfolio.html";
+        }
+
+    </script>
+
+
+    <script type="text/javascript">
+        function change() {
+            var btn = document.getElementById("text1");
+
+            if (btn.value == "We are the best!") {
+                btn.value = "Who's the best?";
+                btn.innerHTML = "Who's the best?";
+            }
+            else {
+                btn.value = "We are the best!";
+                btn.innerHTML = "We are the best!";
+            }
+
+            var gif = document.getElementById("gif1");
+
+            if (gif.src  == "https://media.giphy.com/media/QBosWy0XVrehzTJ2pF/giphy.gif") {
+                gif.src  = "https://media.giphy.com/media/lCN6LF3S1fQWc/giphy.gif";
+                
+            }
+            else {
+                gif.src  = "https://media.giphy.com/media/QBosWy0XVrehzTJ2pF/giphy.gif";
+                
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
